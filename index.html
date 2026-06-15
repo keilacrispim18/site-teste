@@ -84,7 +84,7 @@
             <address>
                 Email: <a href="mailto:keila@keila.com">keila@keila.com</a> <br>
                 Telefone: <a href="tel:+5511999999999">+55 11 99999-9999</a>
-            </address>
+            </address> <br>
             <form>
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required><br>
@@ -92,17 +92,31 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required><br>
 
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone"><br>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="10" required><br>
 
-                <label for="assunto">Assunto:</label>
-                <select name="assunto" id="assunto">
-                    <option value="orçamento">Orçamento</option>
-                    <option value="duvida">Dúvida</option>
-                    <option value="outro">Outro</option>
-                </select>
-                <label for="mensagem">Mensagem:</label><br>
-                <textarea id="mensagem" name="mensagem" rows="10" cols="30" required></textarea><br>
+                <label for="materia">Matéria:</label>
+                <select name="materia" id="materia">
+                    <option value="matematica">Matemática</option>
+                    <option value="portugues">Português</option>
+                    <option value="biologia">Biologia</option>
+                    <option value="ciencias">Ciências</option>
+                    <option value="historia">História</option>
+                    <option value="geografia">Geografia</option>
+                    <option value="artes">Artes</option>
+                </select> <br>
+                <label for="escolaridade">Escolaridade:</label>
+                <select name="escolaridade" id="escolaridade">
+                    <option value="ensino_fundamental">Ensino Fundamental</option>
+                    <option value="ensino_medio">Ensino Médio</option>
+                    <option value="ensino_superior">Ensino Superior</option>
+                    <option value="mestrado">Mestrado</option>
+                    <option value="doutorado">Doutorado</option>
+                    <option value="pos_doutorado">Pós-Doutorado</option>
+
+                </select> <br>
+                <label for="descricao">Descrição:</label><br>
+                <textarea id="descricao" name="descricao" rows="10" cols="30" required></textarea><br>
                 <input type="checkbox" id="inscricao" name="inscricao">
                 <label for="inscricao">Desejo receber novidades por email</label><br>
                 <input type="submit" value="Enviar">
